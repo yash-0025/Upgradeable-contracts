@@ -19,5 +19,6 @@
 - Implementation contracts contains the business logic.
 
 ### UUPS (Universal Upgradeable Proxy standard)
-
-
+- Here the logic contract itself contains the upgradeable functionality.
+- A single function in the implemetation contracts handles this upgrades.
+- It reduces the gas costs since the upgrade logic inside the implementation contract.
