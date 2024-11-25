@@ -33,7 +33,13 @@
 - It splits functionality across multiple logic contracts , calls facets.
 - It uses a diamond storage pattern to map function selectors to facet.
 
+### Self Destruct and Redeploy
+- The contract is destroyed using **`selfdestruct`** and a new contract is redeployed with the same address.
+- It cannot retian its storage back as it is wiped out during destruction
 
+## Eternal Storage Pattern
+- Separates storage into a standalone contract
+- The logic contract can be redeployed and reference the same storage contract.
 
 
 
