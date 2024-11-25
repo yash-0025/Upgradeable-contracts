@@ -22,3 +22,18 @@
 - Here the logic contract itself contains the upgradeable functionality.
 - A single function in the implemetation contracts handles this upgrades.
 - It reduces the gas costs since the upgrade logic inside the implementation contract.
+
+
+### Beacon Proxy Pattern
+- It uses a beacon contract to point to the implementation contract
+- Proxy contract fetch the implemetation address from the Beacon, enabling multiple proxies to use the same logic contract.
+- It has centralized controlfor upgrading logic across multiple proxies
+
+### Diamond Proxy Pattern [EIP-2535]
+- It splits functionality across multiple logic contracts , calls facets.
+- It uses a diamond storage pattern to map function selectors to facet.
+
+
+
+
+
